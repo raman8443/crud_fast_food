@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="icon" href="../img/favicon-96x96.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Smells</title>
+</head>
+
+<body>
+    <header >
+        <div class="encabezado">
+            <img class="imagen_logo" src="img/logo2.png" alt="logo">
+            <div>
+                <img  class="menucirculo" src="img/menucirculo.png"  alt="">
+            </div>
+            <nav id="nav" class="nav">
+                <a href="index.html">Inicio</a>
+                <a  href="menu.html">Menú</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contactos</a>            
+            </nav>
+        </div>
+    </header>
+        
+    <main>
+        <section>
+            <h1 class="titulo_contactos">Ponte en contacto con nosotros para recibir información mayorista o dejar sugerencias</h1>
+            <form  id="form_evento" action="" target="_blank" method="post">
+                <fieldset>
+                    <legend class="formulario_estilo" id="leyenda_formulario">Completa con tus datos:</legend>
+                    <div class="formulario_estilo">
+                        <label for="primerNombre">Nombres:</label>
+                        <input id="primerNombre" size="30" type="text" name="primerNombre" placeholder="Ingrese su nombre..." required>
+
+                        <label for="apellido" >Apellido:</label>
+                        <input id="apellido" size="30" type="text" name="apellido" placeholder="Ingrese su apellido..." >
+
+                        <label for="ciudad">Provincia:</label>
+                        <select id="ciudad" name="ciudad" >
+                            <option value="Selecciona">Selecciona</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="Entre Ríos">Entre Ríos</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="La Pampa">La Pampa</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquén">Neuquén</option>
+                            <option value="Río Negro">Río Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Santa Cruz">Santa Cruz</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Santiago del Estero">Santiago del Estero</option>
+                            <option value="Tierra del Fuego">Tierra del Fuego</option>
+                            <option value="Tucumán">Tucumán</option>
+                        </select>
+     
+                        <label for="nacimiento">Fecha de nacimiento:</label>
+                        <input id="nacimiento"  type="date" name="nacimiento" >
+                    
+                        <label for="celular">Ingrese su número de celular:</label>
+                        <input type="number" id="celular" name="celular" placeholder="xxxx-xxxxxx" >
+
+                        <label for="email">Ingrese su email:</label>
+                        <input type="email" id="email" name="email" placeholder="xxxx@xxx.xxx" >
+                        <div class="item_radio">
+                            <span id="sucursales">Posee algun negocio:</span>
+                            <input type="radio" id="sucursal-si" name="sucursal" value="Si">
+                            <label for="sucursal-si">Si</label>
+                            <input type="radio" id="sucursal-no" name="sucursal" value="No">
+                            <label for="sucursal-no">No</label>
+                        </div>
+                        <label  for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="3"  maxlength="300"></textarea>
+
+                        <label for="imagen">Selecciona una imagen si desea:</label>
+                        <input type="file" id="imagen" name="imagen" accept="image/*">
+                        <span class="errorEnvio"></span>
+                     <button id="boton_enviar_formulario" type="submit">Enviar</button>
+                </div>
+                </fieldset>
+            </form>
+        </section>
+    
+    </main>
+
+    <footer class="footer">
+        <img class="imagen_logo" src="img/logo2.png" alt="logo">
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity=
+    "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity=
+        "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity=
+                "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    <script src="script.js"></script>
+</body>
+</html>
